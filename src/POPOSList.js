@@ -1,6 +1,6 @@
 import React from 'react';
 import POPOSSpace from './POPOSSpace';
-
+import './POPOSList.css';
 function POPOSList() {
     return (
         <div className='POPOSList'>
@@ -24,6 +24,16 @@ function POPOSList() {
               address='50 Embarcadero St.'
               image='embarcadero-center.jpg'
             />
+            <POPOSSpace
+                name="525 Market Street Plaza"
+                address="525 Market St."
+                image="525-market-street-plaza.jpg"
+            />
+            <POPOSSpace
+                name="Citigroup Center"
+                address="1 Sansome St."
+                image="citigroup-center.jpg"
+            />   
         </div>
     )
 }
