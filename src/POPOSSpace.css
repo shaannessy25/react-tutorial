@@ -7,3 +7,10 @@
     width: 100%;
     height: auto;
 }
+
+.Time{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: red;
+}
