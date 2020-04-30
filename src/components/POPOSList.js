@@ -1,7 +1,7 @@
 import React from 'react';
 import POPOSSpace from './POPOSSpace';
 import './POPOSList.css';
-import data from './sfpopos-data.json'
+import data from '../sfpopos-data.json'
 
 
 
@@ -10,9 +10,10 @@ const titles = data.map((obj) => {
 })
 
 function POPOSList() {
-    const spaces = data.map(({title, address, images, hours }) => {
+    const spaces = data.map(({title, address, images, hours }, i) => {
         return (
             <POPOSSpace
+                id={i}
                 key={title}
                 address={address}
                 image={images[0]}
